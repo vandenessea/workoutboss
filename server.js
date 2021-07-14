@@ -12,7 +12,9 @@ app.use(express.static("public"));
 
 const db = require('./models');
 mongoose.connect(
-    process.env.MONGODB_URI || 'mongodb://localhost/workout' , 
+    // process.env.MONGODB_URI || 'mongodb://localhost/workout' , 
+'mongodb+srv://alex-user:1234password@cluster0.goisb.mongodb.net/workoutDB?retryWrites=true&w=majority' , 
+
     {   
      useNewUrlParser: true,
      useUnifiedTopology: true,
